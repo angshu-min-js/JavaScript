@@ -1,0 +1,14 @@
+function Rabbit(adjective) {
+    this.adjective = adjective;
+    this.describeMyself = function() {
+        console.log("I am a " + this.adjective + " rabbit");
+    };
+}
+var rabbit1 =new Rabbit();
+rabbit1.adjective="fluffy";
+// now we can easily make all of our rabbits
+var rabbit2 =new Rabbit();
+rabbit2.adjective="happy";
+var rabbit3 =new Rabbit();
+rabbit3.adjective="sleepy";
+rabbit1.describeMyself();
